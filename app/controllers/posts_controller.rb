@@ -39,6 +39,7 @@ class PostsController < ApplicationController
 
   private
     def set_post
+      # @post = Post.friendly.find(params[:id])
       @post = Post.find(params[:id])
     end
 
